@@ -3,5 +3,5 @@ assets:
 - name: scripts/minimushroom.lua
   method: copy
   source:
-  - name: mpcost.lua
+  - name: minimushroom.lua
 title: Mini Mushroom
