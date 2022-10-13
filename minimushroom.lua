@@ -35,6 +35,17 @@ end
 
 function Cheats()
    WriteFloat(Sys3+0x17CE4, 20) -- Sora movement speed
+   WriteFloat(Sys3+0x17D18, 30) -- Valor Form
+   WriteFloat(Sys3+0x17D4C, 30) -- Wisdom Form
+   WriteFloat(Sys3+0x17D80, 25) -- Master Form
+   WriteFloat(Sys3+0x17DB4, 40) -- Final Form
+   WriteFloat(Sys3+0x17E1C, 45) -- Lion Sora
+   WriteFloat(Sys3+0x17DE8, 40) -- Anti Form
+   WriteFloat(Sys3+0x17E50, 18) -- Mermaid Sora
+   WriteFloat(Sys3+0x18190, 50) -- Carpet Sora
+   WriteFloat(Sys3+0x181F8, 20) -- Dice Sora
+   WriteFloat(Sys3+0x1822C, 20) -- Card Sora
+   WriteFloat(Sys3+0x18364, 20) -- Limit Form
    local animpointer=ReadLong(0x1B2512)+0x2A8
    WriteFloat(animpointer, 1, true)
    local soraJumpStrengthPointer=ReadLong(0x1B2512)+0x130
