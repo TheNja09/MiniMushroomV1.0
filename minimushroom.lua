@@ -46,7 +46,6 @@ function Cheats()
    WriteFloat(Sys3+0x181F8, 20) -- Dice Sora
    WriteFloat(Sys3+0x1822C, 20) -- Card Sora
    WriteFloat(Sys3+0x18364, 20) -- Limit Form
-   WriteFloat(0x3BE5A-0x56454E, 1.5)
    local animpointer=ReadLong(0x1B2512)+0x2A8
    WriteFloat(animpointer, 1, true)
    local soraJumpStrengthPointer=ReadLong(0x1B2512)+0x130
