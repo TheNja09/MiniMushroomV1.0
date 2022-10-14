@@ -56,5 +56,8 @@ function Cheats()
 	else WriteFloat(soraScalePointer, 0.3, true)
    end
    local soraGravityPointer=ReadLong(0x1B2512)+0x138
-   WriteFloat(soraGravityPointer, 5, true)
+   if ReadShort(Now+0) == 0x0D07 then
+	WriteFloat(soraGravityPointer, 16, true)
+	else WriteFloat(soraGravityPointer, 5, true)
+   end
 end
