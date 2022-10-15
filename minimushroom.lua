@@ -52,8 +52,10 @@ function Cheats()
    WriteFloat(soraJumpStrengthPointer, 600, true)
    local soraScalePointer=ReadLong(0x55629A)+0x3C
    if ReadShort(Now+0) == 0x1C12 and ReadShort(Now+8) == 0x44 then
-	WriteFloat(soraScalePointer, 1, true)
-	else WriteFloat(soraScalePointer, 0.3, true)
+		WriteFloat(soraScalePointer, 1, true)
+    elseif ReadShort(Now+0) == 0x2202 and ReadShort(Now+8) == 0x9D then
+		WriteFloat(soraScalePointer, 1, true)
+    else WriteFloat(soraScalePointer, 0.3, true)
    end
    local soraGravityPointer=ReadLong(0x1B2512)+0x138
    if ReadShort(Now+0) == 0x0D07 then
