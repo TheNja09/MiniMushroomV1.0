@@ -1,8 +1,8 @@
+title: Mini Mushroom
+description: This mod makes Sora much smaller, decreases his gravity, increases his jump height, and makes all versions of Sora run 2.5x faster! Some areas have softlock prevention.
 assets:
 #Lua Scripts
 - name: scripts/minimushroom.lua
   method: copy
   source:
   - name: minimushroom.lua
-title: Mini Mushroom
-description: This mod makes Sora much smaller, decreases his gravity, increases his jump height, and makes all versions of Sora run 2.5x faster! Some areas have softlock prevention.
