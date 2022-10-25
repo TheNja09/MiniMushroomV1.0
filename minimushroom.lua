@@ -33,8 +33,13 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 	return ((Map == M or not M) and (Btl == B or not B) and (Evt == E or not E))
 end
 
-function Cheats()
+function Cheats() 56454E
    WriteFloat(Sys3+0x17CE4, 20) -- Sora movement speed
+   WriteFloat(0x250D312, 800) -- Sora High Jump 1
+   WriteFloat(0x250D356, 1000) -- Sora High Jump 2
+   WriteFloat(0x250D39A, 1200) -- Sora High Jump 3
+   WriteFloat(0x250D3DE, 1400) -- Sora High Jump MAX
+   WriteFloat(0x250D422, 3000) -- Sora High Jump AX2
    WriteFloat(Sys3+0x17D18, 30) -- Valor Form
    WriteFloat(Sys3+0x17D4C, 30) -- Wisdom Form
    WriteFloat(Sys3+0x17D80, 25) -- Master Form
