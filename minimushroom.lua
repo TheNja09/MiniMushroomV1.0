@@ -34,6 +34,9 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 end
 
 function Cheats()
+    if ReadFloat(0xFFFFFFFFFFAD790C) > 0.9 then
+    WriteFloat(0xFFFFFFFFFFAD790C, 1.25)
+    end
     WriteFloat(Sys3+0x17CE4, 20) -- Sora movement speed
     WriteFloat(0x250D312, 800) -- Sora High Jump 1
     WriteFloat(0x250D356, 1000) -- Sora High Jump 2
@@ -61,7 +64,6 @@ function Cheats()
     elseif ReadShort(Now+0) == 0x2202 and ReadShort(Now+8) == 0x9D then
         WriteFloat(soraScalePointer, 1, true)
     else WriteFloat(soraScalePointer, 0.3, true)
-        WriteFloat(0xFFFFFFFFFFAD790C, 1.25)
     end
     local soraGravityPointer=ReadLong(0x1B2512)+0x138
     if ReadShort(Now+0) == 0x0D07 then
