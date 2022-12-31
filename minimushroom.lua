@@ -34,9 +34,6 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 end
 
 function Cheats()
-    if ReadFloat(0xFFFFFFFFFFAD790C) < 1.1 then
-    WriteFloat(0xFFFFFFFFFFAD790C, 1.25)
-    end
     WriteFloat(Sys3+0x17CE4, 20) -- Sora movement speed
     WriteFloat(0x250D312, 800) -- Sora High Jump 1
     WriteFloat(0x250D356, 1000) -- Sora High Jump 2
